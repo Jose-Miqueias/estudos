@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+<style>
+    div#area {
+        font: normal 15pt Arial;
+        background: rgb(28, 162, 28);
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var conteudo = window.document.getElementById('area')
+        conteudo.addEventListener('click', clicar)
+        conteudo.addEventListener('mouseleave', saiu)
+        conteudo.addEventListener('mouseenter', entrou)
+        conteudo.addEventListener('mousedown', selecionou)
+
+        function clicar(){
+            conteudo.innerText = 'Você me clicou!'
+            conteudo.style.background = 'tomato'
+            conteudo.style.color = 'white'
+        }
+
+        function saiu() {
+            conteudo.innerText = 'Vacê saiu...'
+            conteudo.style.background = 'yellow'
+            conteudo.style.color = 'darkgreen'
+        }
+
+        function entrou() {
+            conteudo.innerText = "Bem vindo(a)!"
+            conteudo.style.background = 'orange'
+            conteudo.style.color = 'black'
+        }
+
+        function selecionou() {
+            conteudo.innerText = 'Solta o botão!'
+        }
+    </script>
+</body>
+</html>

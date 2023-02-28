@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        html{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body > h1 {
+            text-align: center;
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            width: 500px;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.293);
+        }
+
+        main > p {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        main > div#imagem {
+            background-color: gray;
+            background-size: cover;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        body > a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <h1>Hora do Dia</h1>
+    <main>
+        <p id="horatxt"></p>
+        <div id="imagem"></div>
+    </main>
+    <a href="https://github.com/jose-miqueias" target="_blank" rel="external">@Miquéias</a>
+
+
+
+
+    <script>
+        var hora = new Date().getHours()
+        horatxt.innerText = `Agora são ${hora} horas.`
+        if (hora < 5){
+            imagem.style.backgroundImage = 'url("madrugada.jpg")'
+            imagem.style.backgroundPosition = 'right center'
+            corpo.style.backgroundImage = 'linear-gradient(to top, tomato, brown)'
+        } else if (hora < 12){
+            imagem.style.backgroundImage = 'url("sunrise.jpg")'
+            corpo.style.backgroundColor = '#F0C06B'
+        } else if (hora < 19){
+            imagem.style.backgroundImage = 'url("sunset.jpg")'
+            corpo.style.backgroundColor = '#D08B4A'
+        } else if (hora <= 23){
+            imagem.style.backgroundImage = 'url("night.jpg")'
+            corpo.style.backgroundColor = '#082964'
+        }
+    </script>
+</body>
+</html>

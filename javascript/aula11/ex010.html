@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+
+        input#ispeed {
+            width: 50px;
+        }
+
+        p#veltxt {
+            margin: 50px 0px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+            color: rgb(14, 96, 150);
+        }
+
+        p#res {
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="ivel">Velocidade do carro</label><input type="number" on name="speeed" id="ispeed">Km/h
+    <input type="button" value="Checar" onclick="checar()">
+    <p id="veltxt"></p>
+    <p id="res"></p>
+
+    <script>
+        function checar() {
+            entrada = Number(window.document.getElementById('ispeed').value)
+            veltxt.innerText = `Velocidade: ${String(entrada)}Km/h`
+            if (entrada >= 80) {
+                res.innerText = "Você passou do limite de velocidade. Multado!"
+                res.style.background = "brown"
+            } else {
+                res.innerText = "Dirija sempre com o cinto de segurança."
+                res.style.background = "green"
+            }
+        }
+    </script>
+</body>
+</html>
