@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mais Tabelas...</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        .destaque {
+            background-color: lightcyan;
+        }
+
+        col.cprofissao {
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="cnome">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprofissao">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>desconhecida</td>
+            <td>Feminino</td>
+            <td>Onironauta</td>
+        </tr>
+        <tr>
+            <td>Novalis Sanchez</td>
+            <td>desconhecida</td>
+            <td>Masculino</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Alice Marine</td>
+            <td>17</td>
+            <td>Feminino</td>
+            <td>Floricultora</td>
+        </tr>
+        <tr>
+            <td>Jacob Rotten</td>
+            <td>15</td>
+            <td>Masculino</td>
+            <td>Concertador</td>
+        </tr>
+        <tr>
+            <td>Estefane</td>
+            <td>desconhecida</td>
+            <td>Feminino</td>
+            <td>Pintora</td>
+        </tr>
+    </table>
+</body>
+</html>

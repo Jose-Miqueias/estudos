@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iwatch">Assistir: </label> <select name="watch" id="iwach">
+                <optgroup label="Animes">
+                    <option value="DBZ">Dragon Ball Z</option>
+                    <option value="NRT">Naruto</option>
+                    <option value="DTH-NT">Death Note</option>
+                </optgroup>
+                <optgroup label="Séries">
+                    <option value="TWD">The Walking Dead</option>
+                    <option value="R&M">Rick and Morty</option>
+                    <option value="MrRBT">Mr. Robot</option>
+                </optgroup>
+                <optgroup label="Youtube">
+                    <option value="DBZA">Dragon Ball Z Abridged</option>
+                    <option value="CEV">Curso em Vídeo</option>
+                    <option value="RG">Ryan George</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Hacker</option>
+                <option>Onironauta</option>
+                <option>Desenhista</option>
+                <option>Escritor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Seu Motivo:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        main {
+            margin: auto;
+            background-color: gray;
+            background: url('imagens/mountains-2.png') center center  fixed;
+            background-size: cover;
+            max-width: 1462px;
+            padding: 100px 20px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+        }
+        .site {
+            display: inline-block;
+            padding: 50px;
+            margin: 9em 3em;
+            background-color: rgba(211, 211, 211, 0.459);
+            border-radius: 30px 0px 30px 0px;
+        }
+        iframe {
+            display: block;
+            height: 700px;
+            width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            padding: 10px;
+            color: white;
+        }
+
+        div#s3 {
+            display: block;
+            width: max-content;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando o uso de iframes</h1>
+        <div class="site" id="s1">
+            <p>WWW.DREAMER.COM</p>
+            <iframe src="https://jose-miqueias.github.io/Dreamer" frameborder="1"><a href="https://jose-miqueias.github.io/Dreamer" target="_blank"></a></iframe>
+        </div>
+        <div class="site" id="s2">
+            <p>WWW.UNCOVERING-REALITY.COM</p>
+            <iframe src="https://jose-miqueias.github.io/UncoveringReality" frameborder="1"><a href="https://jose-miqueias.github.io/UncoveringReality" target="_blank"></a></iframe>
+        </div>
+        <div class="site" id="s3">
+            <p>WWW.PROJETO-CORDEL.COM</p>
+            <iframe src="https://jose-miqueias.github.io/projeto-cordel" frameborder="1"><a href="https://jose-miqueias.github.io/projeto-cordel" target="_blank"></a></iframe>
+        </div>
+    </main>
+</body>
+</html>

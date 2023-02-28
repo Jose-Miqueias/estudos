@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores:
+verde: #49a09d
+lilás: #5f2c82
+*/
+
+:root {
+    --cor01: #49a09d;
+    --cor02: #C34A36;
+    --cor03: #904579;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--cor02);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    width: 250px;
+    height: 510px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    height: 200px;
+    background: var(--cor02) url(../imagens/building.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > .campo {
+    display: block;
+    background-color: #BA7C33;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    border: 2px solid #BA7C33;
+}
+
+div.campo > span {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    
+}
+
+div.campo > input {
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus {
+}
+
+div.campo > label {
+    display: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+form > input[type='submit'] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor01);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type='submit']:hover {
+    background-color: #306967;
+}
+
+form > .botao {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    padding: 9px;
+    background-color: white;
+    border: 1px solid var(--cor01);
+    border-radius: 5px;
+
+    text-align: center;
+    text-decoration: none;
+    color: #306967;
+    margin-top: 5px;
+}
+
+form > .botao > span {
+    font-size: 0.8em;
+}

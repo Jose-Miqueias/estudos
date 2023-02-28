@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        iframe#tela {
+            border: 1px solid black;
+            width: 95vw;
+            height: 400px;
+            background: url('imagens/iframe-fundo.jpg') center center no-repeat;
+            background-size: contain;
+
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, libero voluptatum earum in vel, fugit officiis voluptate at tenetur sit quasi ad numquam repellat. At repellendus omnis magni ullam veniam.</p>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="a-grande-tela!">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="a-grande-tela!">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="a-grande-tela!">Terceira página</a></li>
+        <li><a href="paginas-extras/pag004.html" target="a-grande-tela!">Quarta página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, corporis adipisci voluptate doloremque, veniam consequatur velit fugit nostrum quae in incidunt voluptates dolor animi iure facere quidem ab tenetur impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium, incidunt corporis repudiandae nemo voluptatibus nihil ipsa atque velit error reprehenderit, cum aperiam maiores sint nobis necessitatibus magnam doloremque officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium explicabo quisquam esse earum, quo ad eum qui eos officiis culpa, reprehenderit asperiores distinctio, architecto possimus mollitia illum quidem magnam.</p>
+    <iframe src="" frameborder="0" id="tela" name="a-grande-tela!" referrerpolicy="no-referrer" sandbox="allow-forms allow-same-origin allow-scripts">
+        <p class="erro">Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nam architecto quae reprehenderit, facilis provident alias doloremque odio laborum molestias ab incidunt velit eaque quibusdam fugiat iure rerum, sint harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet obcaecati ut vel maxime explicabo a incidunt rerum impedit accusantium quibusdam porro, doloribus magni exercitationem fuga repellendus molestiae ratione. Vitae!</p>
+</body>
+</html>

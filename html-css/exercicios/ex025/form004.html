@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados do Usuário</legend>
+            <p><label for="inome">Usuário: </label> <input type="text" name="nome" id="inome" required placeholder="nome de usuário"></p>
+            <p><label for="icell">Celular: </label> <input type="tel" name="cell" id="icell" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel"></p>
+            <p><label for="iemail">Email: </label> <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="exemplo@gmail.com"></p>
+            <p><label for="isenha">Senha: </label> <input type="password" name="senha" id="isenha" required></p>
+        </fieldset>
+
+
+        <p><input type="submit" value="Validar"></p>
+    </form>
+</body>
+</html>
