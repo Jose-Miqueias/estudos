@@ -20,7 +20,7 @@ h1 {
 .o-grande-container {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.412);
     border-radius: 10px;
-    width: 70%;
+    width: 600px;
     margin: auto;
     background-color: white;
 }
