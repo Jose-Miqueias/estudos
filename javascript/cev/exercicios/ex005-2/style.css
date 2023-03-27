@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+:root{
+    --neutral: #0A1828;
+    --contrast: #178582 ;
+    --contrast2: #BFA181;
+}
+
+body{
+    background-color: var(--neutral);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+header > h1{
+    color: var(--contrast);
+}
+
+section{
+    background-color: var(--contrast2);
+    color: black;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.452);
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.334);
+}
+
+input#num{
+    color: var(--neutral);
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 4px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+input#num:hover{
+    background-color: white;
+}
+
+.btn{
+    background: var(--neutral);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: #112944;
+}
+
+select#seltab{
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer > a{
+    text-decoration: none;
+    color: var(--contrast);
+}

@@ -16,6 +16,8 @@ function adicionar(){
         tab.appendChild(opt)
 
     }
+    document.getElementById('num')['value'] = '' // Limpa a caixa de input após valor ser adicionado.
+    document.getElementById('num').focus()
 }
 
 function finalizar(){
