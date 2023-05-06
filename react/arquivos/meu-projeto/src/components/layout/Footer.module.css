@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    background-color: black;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.social {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.social svg {
+    font-size: 1.9rem;
+    color: orange;
+}
